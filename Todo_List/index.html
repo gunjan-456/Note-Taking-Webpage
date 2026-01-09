@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1 class="heading" style="margin: 2rem 0 1rem; text-align: center; ">Add a new note!!</h1>
+<section class="form" style="margin: auto; width: 50%; padding: 10px;">
+    <form action="/">
+    <label for="title">Title</label>
+    <input type="text" id="title" placeholder="Title" required>
+    <label for="description">Content</label>
+    <textarea id="description" cols="10" rows="4" placeholder="Content" required></textarea>
+    <input type="submit" value="Save">
+  </form>
+</section>
+<h1 class="heading" style="margin-top: 1.25rem;">My Notes</h1>
+<section class="cards">
+  <div class="card flex-ctr-ctr">
+    <h3>Sample Note</h3>
+    <p class="flex-ctr-ctr">This is a sample note, fill the above form to create notes.</p>
+  </div>
+</section>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+  padding-left: 1rem;
+  background-color: black;
+}
+.flex-ctr-ctr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+}
+.cards .card {
+  cursor: pointer;
+  width: calc(95vw / 3);
+  height: 150px;
+  position: relative;
+  border: 3px solid white;
+  background: orange;
+  margin: 0.25rem;
+}
+.cards .card h3 {
+  opacity: 1;
+  font-size: 1.15rem;
+  padding: 0 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.cards .card p {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+.cards .card:hover p {
+  opacity: 1;
+  pointer-events: auto;
+}
+.cards .card:hover h3 {
+  opacity: 0;
+  pointer-events: none;
+}
+.form form {
+  width: 500px;
+  color: white;
+}
+.form [type="text"],
+.form textarea {
+  display: block;
+  padding: 0.5rem;
+  background: white;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: "poppins", sans-serif;
+}
+.form [type="text"]:focus,
+.form textarea:focus {
+  outline: none;
+  border: 1px solid #1e6bd6;
+}
+.form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+.form [type="submit"] {
+  display: block;
+  cursor: pointer;
+  margin: 1.25rem 0 2rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+  border: 3px solid white;
+  background: red;
+  transition: all 0.1s ease;
+}
+.form [type="submit"]:hover {
+  opacity: 0.5;
+}
+.form [type="submit"]:focus {
+  outline: 0;
+}
+.heading {
+  color: yellow;
+  margin-bottom: 1.25rem;
+  line-height: 1.15;
+  font-size: 3.5rem;
+}
